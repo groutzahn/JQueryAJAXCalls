@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var pageCaption = "Test area";
+
+}
+
+<h2>@pageCaption</h2>
+
+    <input type="button" value=".Ajax call get soldier" id="btnAjaxCall" />&nbsp;
+    <input type="button" value=".Ajax call get all soldiers" id="btnAjaxAllSoldiersCall" /><br /><br />
+
+    <input type="button" value=".Load soldier call" id="btnLoadCall" />&nbsp;
+    <input type="button" value=".Load all soldiers call" id="btnLoadAllSoldiersCall" />&nbsp;
+    <input type="button" value=".Load get rank" id="btnLoadRankCall" /><br /><br />
+
+    <input type="button" value=".Get soldier call" id="btnGetCall" />&nbsp;
+    <input type="button" value=".Get all soldiers call" id="btnGetAllSoldiersCall" />&nbsp;
+    <input type="button" value=".Get get rank" id="btnGetRankCall" /><br /><br />
+
+    <input type="button" value=".Post call" id="btnPostCall" />&nbsp;
+    <input type="button" value=".Ajax post call" id="btnAjaxPostCall" /><br /><br />
+
+    <input type="button" value=".GetJSON call" id="btngetJSONCall" /><br /><br />
+
+    @Html.ActionLink("Download file path - text file", "ReturnFilePathResultText", "Home")<br />
+    @Html.ActionLink("Download file path - Word doc", "ReturnFilePathResultWord", "Home")<br />
+    @Html.ActionLink("Download file path - Excel", "ReturnFilePathResultExcel", "Home")<br />
+
+    <input type="button" value=".Ajax get text file" id="btnAjaxGetText" /><br /><br />
+
+    @Html.ActionLink("Download file stream - text file", "ReturnFileStreamResultText", "Home")<br />
+    @Html.ActionLink("Download file stream - Word doc", "ReturnFileStreamResultWord", "Home")<br />
+    @Html.ActionLink("Download file stream - Excel", "ReturnFileStreamResultExcel", "Home")<br /><br />
+
+    @Html.ActionLink("Download file content - text file", "ReturnFileContentResultText", "Home")<br />
+    @Html.ActionLink("Download file content - Word doc", "ReturnFileContentResultWord", "Home")<br />
+    @Html.ActionLink("Download file content - Excel", "ReturnFileContentResultExcel", "Home")<br />
+
+    <div id="targetDiv">
+    </div><br/>
+
+    <div id="targetRankDiv">
+    </div>
+
+
+@section scripts
+    {
+<script src="~/Scripts/test.js"></script>
+}
+
+<style>
+    #targetDiv {
+        background-color: aqua;
+        height: 200px;
+        width:600px
+    }
+    #targetRankDiv {
+        background-color:burlywood;
+        height: 100px;
+        width:200px
+    }
+</style>
+
+
+
+
